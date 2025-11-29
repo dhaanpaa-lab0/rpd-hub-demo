@@ -2,8 +2,7 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,python,pycharm+all
 
 ### Reporting HUB Database Demo
-sys/ingest/
-sys/output/
+_workspace/
 .env
 
 
