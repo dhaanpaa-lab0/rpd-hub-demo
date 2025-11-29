@@ -6,23 +6,23 @@ class DataConfig:
 
     @property
     def pg_db(self):
-        return environ.get("PG_DB")
+        return environ.get("PG_DB", "rpd")
 
     @property
     def pg_host(self):
-        return environ.get("PG_HOST")
+        return environ.get("PG_HOST", "localhost")
 
     @property
     def pg_port(self):
-        return environ.get("PG_PORT")
+        return environ.get("PG_PORT", "5432")
 
     @property
     def pg_user(self):
-        return environ.get("PG_USER")
+        return environ.get("PG_USER", environ.get("USER"))
 
     @property
     def pg_password(self):
-        return quote(environ.get("PG_PASS"))
+        return quote(environ.get("PG_PASS", "***"))
 
     @property
     def pg_url_sqlalchemy(self):
