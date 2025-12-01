@@ -52,6 +52,9 @@ Database configuration is managed through environment variables (see DataConfig 
 - `PG_PASS` - Database password (URL-encoded automatically)
 
 ```bash
+# Create the database (safe to run multiple times)
+uv run python db_create.py
+
 # Create a new migration
 uv run alembic revision --autogenerate -m "description of changes"
 
